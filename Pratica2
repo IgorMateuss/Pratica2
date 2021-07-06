@@ -1,0 +1,205 @@
+Exercicio 1:
+
+void main() {
+
+   for(int i = 0; i<=100; i++)
+   {
+    print(i);
+  }
+
+}
+
+
+Exercicio 2:
+
+void main() {
+  
+   int maior= 0;
+
+   for(int i = 0; i<=10; i++)
+   {
+    print(i);
+     
+     if (maior<i) {
+       maior=i;
+       print(maior);
+           
+     }
+  }
+
+}
+
+
+Exercicio 3:
+
+void main() {
+  int n1= 2;
+  int n2= 10;
+  int soma= n1*n2;
+ 
+
+   for(int i =0; i<=1200; i+=soma)
+   {
+    print(i);
+  }
+  
+}
+
+
+
+Exercicio 4:
+
+
+void main() {
+  double media_turma= 0;
+  int total= 0;
+ 
+  const List media_alunos = [9, 7, 6, 7, 8, 10, 7, 8, 10, 9];
+
+  for(int num in media_alunos ){
+    print(num);
+    total+=num;
+    media_turma=total/media_alunos.length;
+  }
+      print(media_turma);
+}
+
+
+
+
+Exercicio 6:
+
+void main() {
+
+   for(int i = 0; i<=70; i+=7)
+   {
+    print(i);
+  }
+  
+}
+
+
+Exercicio 7:
+
+
+void main() {
+  double media_altura= 0;
+  double total= 0;
+  double maior= 0;
+  double menor= 0;
+ 
+  const List media_alunos = [1.66, 1.76, 1.73, 1.79, 1.86, 1.91, 1.89, 1.75, 1.93, 1.83, 1.73, 1.96, 1.81, 1.78, 1.87];
+
+  menor=media_alunos[0];
+  for(double num in media_alunos ){
+    print(num);
+    total+=num;
+    media_altura=total/media_alunos.length;
+    
+    if(maior<num){
+      maior=num;     
+      
+    }
+     if(menor>num){
+      menor=num;     
+      
+    }
+    
+  }
+      print(media_altura);
+      print(maior);
+      print(menor);
+}
+
+
+
+Exercicio 8:
+
+void main() {
+ 
+  int soma=5;
+  String result ='5';
+  
+  for(int i = 5; i > 1; i--){
+    soma=soma*(i-1);
+    result += ' x ${i -1}';
+    print('$result = $soma');
+    
+  }
+  
+  
+}
+
+
+
+Exercicio 9:
+
+
+void main() {
+
+  var peso = [70, 65, 75, 92, 95, 85, 78];
+  var nomes = ['Gregore', 'Igor', 'Tiago', 'Marcos', 'Samuel', 'Augusto', 'Iasser']; 
+  
+  for( int i = 0; i < peso.length; i++){
+    print(nomes[i]);
+    print(peso[i]);
+  }
+  print("Maior de 90kg");
+  
+  for( int i = 0; i < peso.length; i++){
+    
+      if(peso[i] > 90){
+      print(nomes[i]);
+      print(peso[i]);
+
+    }
+
+}
+ 
+}
+
+
+Exercicio 10:
+
+
+void main() {
+  
+  double total=0;
+  double pontos7=0;
+  double pontos14=0;
+  double pontos21=0;
+  
+
+  var multas = [560, 350, 200, 1200, 400, 750];
+  
+  for ( int i = 0; i < multas.length; i++){
+    total+=multas[i];
+    
+      if (multas[i] < 500){  
+        
+    pontos7++;
+        
+    }
+          if (multas[i] > 501 && multas[i] <1000){  
+        
+    pontos14++;
+        
+    }
+    
+          if (multas[i] > 1000){  
+        
+    pontos21++;
+        
+    }
+  }
+  
+  print("total");
+  print(total);
+  print("7 pontos");
+  print(pontos7);
+  print("14 pontos");
+  print(pontos14);
+  print("21 pontos");
+  print(pontos21);
+  
+}
